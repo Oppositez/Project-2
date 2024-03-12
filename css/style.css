@@ -17,13 +17,18 @@ body{
     background-color: black;
 }
 
-img{
+#heart{
     display: block;
   margin: auto;
-  width: 45%;
+  width: 25%;
  position: absolute;
- left:450px ;
- top: 30px;
+ left: 545px;
+ top: 25px;
+animation: scale 5s infinite;
+
+}
+#heart:hover{
+    cursor: pointer;
 }
 
 p{
@@ -109,15 +114,260 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 }
 
 h1{
-    color: black;
+    display: inline-block;
+    color: white;
+    background-color: #A7D379;
     text-align: center;
-    padding-top: 20px;
+    padding: 5px 70px;
     font-size: 400%;
+    font-family: monospace;
+    margin-left: 560px;
+    margin-top: 10px;
+    border: double 12px #3DA542;
+    
     
 }
 
-#info{
-    display: flexbox;
-    background-color: #3DA542;
+#text{
+    display: flex;
+    width: 100vw;
+    height:80vh ;
+    /* background-color: #3DA542; */
+    justify-content: space-around;
+}
+
+.item{
+width: 470px;
+height: 530px;
+background-color: #A7D379;
+margin: 1vw;
+border: solid 6px #3DA542;
 
 }
+
+#flag{
+    width: 100vw;
+    height: 9vh;
+    position: absolute;
+    left: 0px;
+    top: 25px;
+    z-index: -1;
+}
+
+#button{
+    width: 5%;
+    position: absolute;
+    bottom: 10px;
+    left: 473px;
+}
+
+#rs{
+    border: none;
+    font-size: 30px;
+    padding: 5px 15px;
+    background-color: #3DA542;
+    font-family: monospace;
+    color: white;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 10px;
+    right: 418px;
+}
+
+#rs:hover{
+    color: #3DA542;
+    background-color: white;
+}
+#tm:hover{
+    color: #3DA542;
+    background-color: white;
+}
+
+#tm{
+    border: none;
+    font-size: 30px;
+    padding: 5px 15px;
+    background-color: #3DA542;
+    font-family: monospace;
+    color: white;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 10px;
+    left: 455px;
+}
+
+#line1{
+    color: white;
+    font-size: 41px;
+    position: absolute;
+    bottom: 15px;
+    left: 5px;
+    z-index: -1;
+}
+#line2{
+    color: white;
+    font-size: 41px;
+    position: absolute;
+    bottom: 35px;
+    left: 5px;
+    z-index: -1;
+}
+
+.lore{
+    padding: 3px;
+    margin: 5px;
+    font-size: 20px;
+    font-family: monospace;
+    border: solid 3px white;
+    display: block;
+    text-align: left;
+    
+
+}
+
+h2{
+    margin: 7px 10px;
+}
+h2:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.slide{
+    color: white;
+    font-size: 120%;
+    animation: whoosh 30s infinite;
+}
+
+.slide2{
+    color: white;
+    font-size: 120%;
+    animation: whoosh2 30s infinite;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+.move{
+    animation: shake .25s infinite;
+}
+
+.move2{
+    animation: shake2 .25s infinite;
+}
+
+.move3{
+    animation: shake3 .25s infinite;
+}
+
+.move4{
+    animation: shake4 .25s infinite;
+}
+
+
+
+@keyframes shake {
+
+    0% { transform: translateX(0) translateY(0) }
+    25% { transform: translateX(5px) translateY(-5px)}
+    50% { transform: translateX(-5px) translateY(5px)}
+    75% { transform: translateX(5px) translateY(-5px)}
+    100% { transform: translateX(0) translateY(0)}
+
+}
+
+@keyframes shake2 {
+
+    0% { transform: translateX(0) translateY(0) }
+    25% { transform: translateX(-5px) translateY(-5px)}
+    50% { transform: translateX(5px) translateY(5px)}
+    75% { transform: translateX(-5px) translateY(-5px)}
+    100% { transform: translateX(0) translateY(0)}
+
+}
+
+@keyframes shake3 {
+
+    0% { transform: translateX(0) translateY(0) }
+    25% { transform: translateX(5px) translateY(5px)}
+    50% { transform: translateX(-5px) translateY(-5px)}
+    75% { transform: translateX(5px) translateY(5px)}
+    100% { transform: translateX(0) translateY(0)}
+
+}
+
+@keyframes shake4 {
+
+    0% { transform: translateX(0) translateY(0) }
+    25% { transform: translateX(-5px) translateY(5px)}
+    50% { transform: translateX(5px) translateY(-5px)}
+    75% { transform: translateX(-5px) translateY(5px)}
+    100% { transform: translateX(0) translateY(0)}
+
+}
+
+@keyframes scale{
+
+0%{
+    width: 29%;
+    height: 90%;
+}
+50%{width: 32%;
+height: 94%;}
+100%{width: 29%;
+height: 90%;}
+
+}
+
+@keyframes whoosh{
+    0%{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    
+    50%{
+        position: absolute;
+        left: 1460px;
+        top: 0px;
+    }
+
+    100%{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    
+}
+
+@keyframes whoosh2{
+    0%{
+        position: absolute;
+        left: 1460px;
+        bottom: 0px;
+    }
+    
+    50%{
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    100%{
+        position: absolute;
+        left: 1460px;
+        bottom: 0px;
+    }
+    
+}
+
+.font{
+    font-family: insult;
+    letter-spacing: 5px;
+}
+
+    @font-face {
+        font-family: insult;
+        src: url("../media/images/who\ asks\ satan.ttf");
+    }
+
